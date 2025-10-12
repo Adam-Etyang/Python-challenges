@@ -16,4 +16,22 @@ $$
 right(i)
 return 2i + 1
 $$
+There are two types of heaps:
+- Max heap, every parent node is greater than or equal to its children -> *Max heap property*
+- Min heap, every parent node is less than or equal to its children -> *Min heap property*
 
+
+Heaps are implemented as binary trees but stored as an array
+```
+Heap as tree:             Stored as array:
+     20                     [20, 15, 10, 7, 9, 5]
+    /  \
+   15    10
+  /  \   /
+ 7   9  5
+ ```
+ We can access any element of the heaps using index arithmetic so no extra memory is needed for the heap 
+ ```
+
+
+```
