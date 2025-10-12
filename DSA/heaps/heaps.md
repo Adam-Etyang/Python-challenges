@@ -16,6 +16,7 @@ $$
 right(i)
 return 2i + 1
 $$
+Note that all this are obtained using 1 based indexing and not 0
 There are two types of heaps:
 - Max heap, every parent node is greater than or equal to its children -> *Max heap property*
 - Min heap, every parent node is less than or equal to its children -> *Min heap property*
