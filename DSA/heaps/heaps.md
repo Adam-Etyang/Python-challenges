@@ -32,7 +32,6 @@ Heap as tree:             Stored as array:
  7   9  5
  ```
  We can access any element of the heaps using index arithmetic so no extra memory is needed for the heap 
- ```
 
+ Buidling a heap takes O(n) time complexity while all the $n-1$ calls to max heapify takes O(log n) time
 
-```
