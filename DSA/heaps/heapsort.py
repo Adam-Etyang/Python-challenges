@@ -16,7 +16,7 @@ def build_heap(arr, n, i):
         arr[i], arr[largest] = arr[largest], arr[i]
         build_heap(arr,n,largest)
 
-def heapSort(arr) -> list :
+def heapSort(arr:list) -> list :
     n = len(arr)
 
     for i in range(n//2-1,-1,-1):
