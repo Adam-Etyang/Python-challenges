@@ -1,7 +1,6 @@
 """
 - You receive a log entry as a string, and you want to extract specific parts.
 
-- log_entry = "INFO: 2025-09-14 10:30:15: User 'Adam' logged in from IP 192.168.1.100"
 
 - Assume the format is LEVEL: TIMESTAMP: MESSAGE.
 
@@ -15,4 +14,13 @@
 
 - Print all three variables.
 """
+if __name__ == "__main__":
 
+     log_entry = "INFO: 2025-09-14 10:30:15: User 'Adam' logged in from IP 192.168.1.100"
+
+     info, timestamp, *message = log_entry.split(': ',2)
+
+     print(f"Info: {info}\n,Timestamp {timestamp}\n,Message: {message}\n")
+
+
+    
