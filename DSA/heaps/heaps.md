@@ -1,6 +1,6 @@
 # Heaps
 The heap data structure is an array object that can be viewed a s nearly complete binary tree. Each node of the tree corresponsds to an element of the array. The tree is completely filled on all level except the lowest which is filled from the left up to a point.
-The root of the tree is A(the array)[1] and given the index $i$ of the node we can easily computer the indices of its parent, left child and right child:
+The root of the tree is A(the array)[1] and given the index $i$ of the node we can easily compute the indices of its parent, left child and right child:
 
 $$
 Parent(i)
@@ -34,4 +34,12 @@ Heap as tree:             Stored as array:
  We can access any element of the heaps using index arithmetic so no extra memory is needed for the heap 
 
  Buidling a heap takes O(n) time complexity while all the $n-1$ calls to max heapify takes O(log n) time
+
+## Heap sort:
+Algorithm:
+- Build Max heap
+- Swap root with the last element of the heap
+- Reduce heapsize by one and heapify root again
+- Repeat till the size of the array is one
+
 
