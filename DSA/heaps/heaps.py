@@ -1,15 +1,16 @@
 class Heap:
     """MAX HEAP"""
+
     def __init__(self):
         self.heap = []
 
     def parent(self, i):
         """Parent node"""
-        return (i - 1)//2
+        return (i - 1) // 2
 
     def left(self, i):
         """Left element of the node"""
-        return 2*i + 1
+        return 2 * i + 1
 
     def right(self, i):
         """Right element of the node"""
@@ -24,7 +25,10 @@ class Heap:
 
         # bubble up the value being inserted
         while i > 0 and self.heap[self.parent(i)] < self.heap[i]:
-            self.heap[i], self.heap[self.parent(i)] = self.heap[self.parent(i)] ,self.heap[i]
+            self.heap[i], self.heap[self.parent(i)] = (
+                self.heap[self.parent(i)],
+                self.heap[i],
+            )
             i = self.parent(i)
 
     # function that helps to maintain the heap property
@@ -48,7 +52,7 @@ class Heap:
         self.heap = A
         n = len(self.heap)
 
-        for i in range(n//2-1,-1,-1):
+        for i in range(n // 2 - 1, -1, -1):
             self.max_heapify(i)
 
     def get_max(self):
@@ -68,6 +72,3 @@ if __name__ == "__main__":
     print(f"Heap from array: {h.heap}")
 
     print(f"Max Item: {h.get_max()}")
-
-    
-
